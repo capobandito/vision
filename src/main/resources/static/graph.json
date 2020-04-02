@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "name": "Pacient A",
+      "label": "Marek Hlavacek",
+      "id": 1
+    },
+    {
+      "name": "Pacient B",
+      "label": "Joza",
+      "id": 2
+    },
+    {
+      "name": "Pacient C",
+      "label": "Ruzenka",
+      "id": 3
+    },
+    {
+      "name": "?",
+      "label": "Unknown",
+      "id": 4
+    }
+  ],
+  "links": [
+    {
+      "source": 4,
+      "target": 1,
+      "type": "INFECT"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "type": "INFECT"
+    }
+  ]
+}
