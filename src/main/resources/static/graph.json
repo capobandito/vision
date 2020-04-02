@@ -1,24 +1,36 @@
 {
   "nodes": [
     {
+      "id": 1,
       "name": "Pacient A",
       "label": "Marek Hlavacek",
-      "id": 1
+      "sex": "M",
+      "address": "Holandska 10, 639 00, Brno",
+      "contact": "+421 123 654 789"
     },
     {
+      "id": 2,
       "name": "Pacient B",
       "label": "Joza",
-      "id": 2
+      "sex": "M",
+      "address": "Udolni 17, 750 05, Zlin",
+      "contact": "+420 123 456 123"
     },
     {
+      "id": 3,
       "name": "Pacient C",
       "label": "Ruzenka",
-      "id": 3
+      "sex": "M",
+      "address": "Na Kopci 16, 750 05, Zlin",
+      "contact": "+421 258 147 963"
     },
     {
-      "name": "?",
+      "id": 4,
+      "name": "Pacient N/A",
       "label": "Unknown",
-      "id": 4
+      "sex": "N/A",
+      "address": "N/A",
+      "contact": "N/A"
     }
   ],
   "links": [

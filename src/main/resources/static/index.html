@@ -8,10 +8,37 @@
         .node {}
 
         .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; }
+
+        .container {
+            width: 80%;
+
+
+            margin: auto;
+            padding: 10px;
+        }
+
+        .one {
+            width: 15%;
+            height: 200px;
+
+            float: left;
+        }
+
+        .two {
+            margin-left: 15%;
+
+
+        }
     </style>
 </head>
 <body>
-<svg width="1660" height="600"></svg>
+
+<section class="container">
+    <div id="head" class="one"></div>
+    <div class="two">
+        <svg width="1660" height="600"></svg>
+    </div>
+</section>
 
 <script src="https://d3js.org/d3.v4.min.js" type="text/javascript"></script>
 <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
@@ -112,6 +139,25 @@
         node.append("text")
             .attr("dy", -3)
             .text(function (d) {return d.name+":"+d.label;});
+
+        node.on("mouseover", function (d) {
+            var g = d3.select(this); // The node
+            var div = d3.select("#head").append("div")
+                .attr('pointer-events', 'none')
+                .attr("class", "tooltip")
+                .style("opacity", 1)
+                .html("<table><tr><td>"+d.sex+"<td></tr>" +
+                    "<tr> <td>"+d.address+"</td></tr>"  +
+                    "<tr> <td>"+d.contact+"</td></tr>"  +
+                    "</table>")
+                .style("left", (0 + "px"))
+                .style("top", (0 +"px"));
+        });
+
+        node.on("mouseout", function (d) {
+            d3.select("body").select('div.tooltip').remove();
+        });
+
 
         simulation
             .nodes(nodes)
