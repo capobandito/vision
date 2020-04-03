@@ -1,6 +1,14 @@
 {
   "nodes": [
     {
+      "id": 0,
+      "name": "Pacient N/A",
+      "label": "Unknown",
+      "sex": "N/A",
+      "address": "N/A",
+      "contact": "N/A"
+    },
+    {
       "id": 1,
       "name": "Pacient A",
       "label": "Marek Hlavacek",
@@ -26,22 +34,66 @@
     },
     {
       "id": 4,
-      "name": "Pacient N/A",
-      "label": "Unknown",
-      "sex": "N/A",
-      "address": "N/A",
-      "contact": "N/A"
+      "name": "Pacient D",
+      "label": "Big Pepa",
+      "sex": "M",
+      "address": "Mendlovo namesti 3, 689 07, Brno",
+      "contact": "+420 951 357 852"
+    },
+    {
+      "id": 5,
+      "name": "Pacient E",
+      "label": "Small Pepa",
+      "sex": "M",
+      "address": "Mendlovo namesti 3, 689 07, Brno",
+      "contact": "+420 951 357 852"
+    },
+    {
+      "id": 6,
+      "name": "Pacient F",
+      "label": "Long Pepa",
+      "sex": "M",
+      "address": "Mendlovo namesti 3, 689 07, Brno",
+      "contact": "+420 951 357 853"
+    },
+    {
+      "id": 7,
+      "name": "Pacient G",
+      "label": "Tall Pepa",
+      "sex": "M",
+      "address": "Mendlovo namesti 3, 689 07, Brno",
+      "contact": "+420 951 357 854"
     }
   ],
   "links": [
     {
-      "source": 4,
+      "source": 0,
       "target": 1,
       "type": "INFECT"
     },
     {
       "source": 2,
       "target": 3,
+      "type": "INFECT"
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "type": "INFECT"
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "type": "INFECT"
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "type": "INFECT"
+    },
+    {
+      "source": 1,
+      "target": 7,
       "type": "INFECT"
     }
   ]
